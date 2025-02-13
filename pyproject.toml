@@ -15,4 +15,4 @@ DisplayName = "ComfyUI-HunyuanVideoWrapper"
 Icon = ""
 
 [tool.setuptools]
-py-modules = ["hyvideo"]
+py-modules = [".","hyvideo"]
