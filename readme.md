@@ -1,4 +1,9 @@
 # ComfyUI wrapper nodes for [HunyuanVideo](https://github.com/Tencent/HunyuanVideo)
+
+# Update by @samhodge-aiml
+
+Made into installable node using hiddenswitch branch of comfyui
+
 # Update 4, the non-update:
 
 As the native implementation exists, and has support for most features by now, I will mostly stop working on these nodes for anything but it's main purpose: early access and testing of potential new features that are difficult (at least for me) to implement natively.

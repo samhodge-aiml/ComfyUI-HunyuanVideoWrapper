@@ -43,7 +43,7 @@ from .hyvideo.modules.models import HYVideoDiffusionTransformer
 from accelerate import init_empty_weights
 from accelerate.utils import set_module_tensor_to_device
 
-import folder_paths
+from comfy.cmd import folder_paths as folder_paths
 folder_paths.add_model_folder_path("hyvid_embeds", os.path.join(folder_paths.get_output_directory(), "hyvid_embeds"))
 
 import comfy.model_management as mm

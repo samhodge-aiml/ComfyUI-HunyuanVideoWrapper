@@ -13,3 +13,39 @@ Repository = "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper"
 PublisherId = "kijai"
 DisplayName = "ComfyUI-HunyuanVideoWrapper"
 Icon = ""
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [ 
+    "ComfyUI_HunyuanVideoWrapper_nodes", 
+    "ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion.pipelines",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion.schedulers",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.modules",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.text_encoder",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.utils",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.vae",
+]
+
+[tool.setuptools.package-dir]
+"ComfyUI_HunyuanVideoWrapper_nodes" = "."
+"ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video" = "enhance_a_video"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo" = "hyvideo"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion" = "hyvideo/diffusion"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion.pipelines" = "hyvideo/diffusion/pipelines"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion.schedulers" = "hyvideo/diffusion/schedulers"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.modules" = "hyvideo/modules"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.text_encoder" = "hyvideo/text_encoder"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.utils" = "hyvideo/utils"
+"ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.vae" = "hyvideo/vae"
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[project.entry-points."comfyui.custom_nodes"]
+ComfyUI_HunyuanVideoWrapper_nodes = "ComfyUI_HunyuanVideoWrapper_nodes"
