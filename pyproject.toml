@@ -13,3 +13,24 @@ Repository = "https://github.com/kijai/ComfyUI-HunyuanVideoWrapper"
 PublisherId = "kijai"
 DisplayName = "ComfyUI-HunyuanVideoWrapper"
 Icon = ""
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = [
+    "ComfyUI_HunyuanVideoWrapper_nodes",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo",
+    "ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video"]
+package-dir = { 
+    "ComfyUI_HunyuanVideoWrapper_nodes" = ".",
+    "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo" = "hyvideo",
+    "ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video" = "enhance_a_video"
+  }
+
+[tool.setuptools.dynamic]
+dependencies = { file = ["requirements.txt"] }
+
+[project.entry-points."comfyui.custom_nodes"]
+ComfyUI_HunyuanVideoWrapper_nodes = "ComfyUI_HunyuanVideoWrapper_nodes"
