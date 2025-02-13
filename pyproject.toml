@@ -19,8 +19,7 @@ requires = ["setuptools", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [tool.setuptools]
-packages = [ 
-    "ComfyUI_HunyuanVideoWrapper_nodes", 
+packages = [ "ComfyUI_HunyuanVideoWrapper_nodes", 
     "ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video"
     "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo",
     "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion",
