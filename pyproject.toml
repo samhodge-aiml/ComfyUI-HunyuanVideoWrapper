@@ -50,7 +50,7 @@ packages = [
 dependencies = { file = ["requirements.txt"] }
 
 [tool.setuptools.package-data]
-"*" = ["**/*.js", "**/*.json"]
+"*" = ["**/*.js", "**/*.json", "**/*.pt", "*.pt"]
 
 [project.entry-points."comfyui.custom_nodes"]
 ComfyUI_HunyuanVideoWrapper_nodes = "ComfyUI_HunyuanVideoWrapper_nodes"
