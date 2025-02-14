@@ -21,6 +21,7 @@ build-backend = "setuptools.build_meta"
 [tool.setuptools]
 packages = [ 
     "ComfyUI_HunyuanVideoWrapper_nodes", 
+    "ComfyUI_HunyuanVideoWrapper_nodes.configs",
     "ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video",
     "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo",
     "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion",
@@ -34,6 +35,7 @@ packages = [
 
 [tool.setuptools.package-dir]
 "ComfyUI_HunyuanVideoWrapper_nodes" = "."
+"ComfyUI_HunyuanVideoWrapper_nodes.configs" = "configs"
 "ComfyUI_HunyuanVideoWrapper_nodes.enhance_a_video" = "enhance_a_video"
 "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo" = "hyvideo"
 "ComfyUI_HunyuanVideoWrapper_nodes.hyvideo.diffusion" = "hyvideo/diffusion"
